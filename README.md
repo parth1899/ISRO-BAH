@@ -1,69 +1,68 @@
-# ISRO-BAH
+# 🚀 ISRO-BAH: Geospatial Context-Aware Chatbot  
 
-## 🎨 Table of Contents
-- [ISRO-BAH](#ISRO-BAH)
-- [Description](#description)
-- [Contributors](#contributors)
-- [Badges](#badges)
-- [Installation](#installation)
-- [How to Contribute to the Project](#how-to-contribute-to-the-project)
-- [Include Credits](#include-credits)
-- [License](#license)
-- [Security](#security)
+## 🏆 About the Project  
 
+This **Geospatial Context-Aware Chatbot** was developed for **ISRO's Bharatiya Antariksh Hackathon 2024**, where our team, **"The Fine Tuners"**, secured a **Top 5 position** across all problem statements.  
 
-## Description
-This project was bult for ISRO's Bharatiya Antariskh Hackathon 2024.
+The chatbot allows users to query geospatial data **in natural language** and receive **interactive maps & summaries** using state-of-the-art AI techniques.  
 
-## Contributors
-- [Parth Petkar](https://github.com/parthpetkar)
-- [Parth Kalani](https://github.com/contributor)
-- [Hritesh Maikap](https://github.com/hriteshMaikap)
-- [Nidhish Wakodikar](https://github.com/contributor)
+## 🌍 Key Features  
 
-## Badges
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.com/parthpetkar/Invoice-Generator-using-Electron.js.svg?branch=main)](https://github.com/parthpetkar/Invoice-Generator-using-Electron.js)
-[![GitHub issues](https://img.shields.io/github/issues/parthpetkar/Invoice-Generator-using-Electron.js)](https://github.com/parthpetkar/Invoice-Generator-using-Electron.js/issues)
-[![GitHub stars](https://img.shields.io/github/stars/parthpetkar/Invoice-Generator-using-Electron.js)](https://github.com/parthpetkar/Invoice-Generator-using-Electron.js/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/parthpetkar/Invoice-Generator-using-Electron.js)](https://github.com/parthpetkar/Invoice-Generator-using-Electron.js/network)
+🔍 **Geospatial Query Understanding** – Uses a **fine-tuned BERT model** to interpret queries accurately.  
+🗺️ **Real-Time Geospatial Mapping** – Plots **maps** based on user queries (e.g., *"Show the water cover of Maharashtra"*).  
+⚡ **Efficient Data Retrieval** – Uses **Qdrant** as a vector database for fast and precise searches.  
+🤖 **AI-Powered Summarization** – Implements **Retrieval-Augmented Generation (RAG)** for context-aware responses.  
+⚙️ **Optimized Backend & APIs** – Flask-based **REST API** and Django-powered backend.  
+💻 **Intuitive Frontend** – Built with **React** for an interactive user experience.  
 
-## Installation
-To install and run this project locally, follow these steps:
+## 🏗️ Technology Stack  
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/parthpetkar/Invoice-Generator-using-Electron.js
+- **Frontend:** React, TypeScript, Vite  
+- **Backend:** Django, Flask, Python  
+- **LLM & AI:** Groq Fast AI Inference, Llama 3.1, BERT  
+- **Vector Search:** Qdrant  
 
-2. Navigate to the project directory:
-   ```bash
-   cd ISRO-BAH
+## 🛠 Installation & Setup  
 
-3. Install dependencies(frontend):
-   ```bash
-   cd frontend
-   npm i
-   npm start
-   
-4. Install dependencies(bakend):
-   ```bash
-   python -m venv venv
-   .\venv\Scripts\activate
-   pip install -r requirements.txt
-   cd backend
-   python manage.py startserver
-   
-## 🛠️ Contribution guidelines for this project
-We welcome contributions from the community! To contribute to this project, please follow these steps:
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/parth1899/ISRO-BAH
+cd ISRO-BAH
+```
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/contribution`).
-3. Make your changes and commit them (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/contribution`).
-5. Create a new Pull Request.
+### 2️⃣ Frontend Setup  
+```bash
+cd frontend
+npm install
+npm start
+```
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+### 3️⃣ Backend Setup  
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # (Windows: venv\Scripts\activate)
+pip install -r requirements.txt
+python manage.py runserver
+```
 
-## Security
-🔒 If you discover any security-related issues, please email [parth.petkar221@vit.edu](parth.petkar221@vit.edu) instead of using the issue tracker.
+### 4️⃣ Vector Database (Qdrant) Setup  
+Run Qdrant using Docker:  
+```bash
+docker run -p 6333:6333 -v .:/qdrant/storage/ qdrant/qdrant
+``` 
+
+## 🧑‍💻 Contributors  
+
+- [Parth Petkar](https://github.com/parthpetkar)  
+- [Parth Kalani](https://github.com/contributor)  
+- [Hritesh Maikap](https://github.com/hriteshMaikap)  
+- [Nidhish Wakodikar](https://github.com/Nidhish-714)  
+
+## 🤝 How to Contribute  
+
+1. **Fork** the repo  
+2. **Create a new branch**: `git checkout -b feature-branch`  
+3. **Commit your changes**: `git commit -m "Add a new feature"`  
+4. **Push to the branch**: `git push origin feature-branch`  
+5. **Submit a Pull Request**  
